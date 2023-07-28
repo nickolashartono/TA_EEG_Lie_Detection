@@ -1,0 +1,196 @@
+dropout: 0.3
+learning_rate: 0.0001
+test_dataloader: !!python/object:torch.utils.data.dataloader.DataLoader
+  _DataLoader__initialized: true
+  _DataLoader__multiprocessing_context: null
+  _IterableDataset_len_called: null
+  _dataset_kind: 0
+  _iterator: null
+  batch_sampler: !!python/object:torch.utils.data.sampler.BatchSampler
+    batch_size: 10
+    drop_last: false
+    sampler: &id004 !!python/object:torch.utils.data.sampler.SequentialSampler
+      data_source: &id003 !!python/object:dataset_img.ImgDatasetLoader
+        eeg_names:
+        - TP9
+        - Fp1
+        - Fp2
+        - TP10
+        file_lists: !!python/object:pandas.core.frame.DataFrame
+          _flags:
+            allows_duplicate_labels: true
+          _metadata: []
+          _mgr: !!python/object/apply:pandas.core.internals.managers.BlockManager
+          - !!python/tuple
+            - !!python/object/apply:pandas._libs.internals._unpickle_block
+              - !!python/object/apply:numpy.core.multiarray._reconstruct
+                args:
+                - &id001 !!python/name:numpy.ndarray ''
+                - !!python/tuple
+                  - 0
+                - !!binary |
+                  Yg==
+                state: !!python/tuple
+                - 1
+                - !!python/tuple
+                  - 2
+                  - 28
+                - !!python/object/apply:numpy.dtype
+                  args:
+                  - O8
+                  - false
+                  - true
+                  state: !!python/tuple
+                  - 3
+                  - '|'
+                  - null
+                  - null
+                  - null
+                  - -1
+                  - -1
+                  - 63
+                - false
+                - - Control/04_TRUTH_01.csv
+                  - Control/04_TRUTH_03.csv
+                  - Control/04_TRUTH_05.csv
+                  - Control/04_TRUTH_07.csv
+                  - Control/04_TRUTH_09.csv
+                  - Control/04_TRUTH_11.csv
+                  - Control/04_TRUTH_13.csv
+                  - Control/07_TRUTH_01.csv
+                  - Control/07_TRUTH_03.csv
+                  - Control/07_TRUTH_05.csv
+                  - Control/07_TRUTH_07.csv
+                  - Control/07_TRUTH_09.csv
+                  - Control/07_TRUTH_11.csv
+                  - Control/07_TRUTH_13.csv
+                  - Control/24_TRUTH_01.csv
+                  - Control/24_TRUTH_03.csv
+                  - Control/24_TRUTH_05.csv
+                  - Control/24_TRUTH_07.csv
+                  - Control/24_TRUTH_09.csv
+                  - Control/24_TRUTH_11.csv
+                  - Control/24_TRUTH_13.csv
+                  - Control/29_TRUTH_01.csv
+                  - Control/29_TRUTH_03.csv
+                  - Control/29_TRUTH_05.csv
+                  - Control/29_TRUTH_07.csv
+                  - Control/29_TRUTH_09.csv
+                  - Control/29_TRUTH_11.csv
+                  - Control/29_TRUTH_13.csv
+                  - Truth/04_TRUTH_02.csv
+                  - Truth/04_TRUTH_04.csv
+                  - Truth/04_TRUTH_06.csv
+                  - Truth/04_TRUTH_08.csv
+                  - Truth/04_TRUTH_10.csv
+                  - Truth/04_TRUTH_12.csv
+                  - Truth/04_TRUTH_14.csv
+                  - Lie/07_LIE_02.csv
+                  - Lie/07_LIE_04.csv
+                  - Lie/07_LIE_06.csv
+                  - Lie/07_LIE_08.csv
+                  - Lie/07_LIE_10.csv
+                  - Lie/07_LIE_12.csv
+                  - Lie/07_LIE_14.csv
+                  - Truth/24_TRUTH_02.csv
+                  - Truth/24_TRUTH_04.csv
+                  - Truth/24_TRUTH_06.csv
+                  - Truth/24_TRUTH_08.csv
+                  - Truth/24_TRUTH_10.csv
+                  - Truth/24_TRUTH_12.csv
+                  - Truth/24_TRUTH_14.csv
+                  - Lie/29_LIE_02.csv
+                  - Lie/29_LIE_04.csv
+                  - Lie/29_LIE_06.csv
+                  - Lie/29_LIE_08.csv
+                  - Lie/29_LIE_10.csv
+                  - Lie/29_LIE_12.csv
+                  - Lie/29_LIE_14.csv
+              - !!python/object/apply:builtins.slice
+                - 0
+                - 2
+                - 1
+              - 2
+            - !!python/object/apply:pandas._libs.internals._unpickle_block
+              - !!python/object/apply:numpy.core.multiarray._reconstruct
+                args:
+                - *id001
+                - !!python/tuple
+                  - 0
+                - !!binary |
+                  Yg==
+                state: !!python/tuple
+                - 1
+                - !!python/tuple
+                  - 1
+                  - 28
+                - &id002 !!python/object/apply:numpy.dtype
+                  args:
+                  - i8
+                  - false
+                  - true
+                  state: !!python/tuple
+                  - 3
+                  - <
+                  - null
+                  - null
+                  - null
+                  - -1
+                  - -1
+                  - 0
+                - false
+                - !!binary |
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB
+                  AAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAA
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA
+                  AAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAA=
+              - !!python/object/apply:builtins.slice
+                - 2
+                - 3
+                - 1
+              - 2
+          - - !!python/object/apply:pandas.core.indexes.base._new_Index
+              - !!python/name:pandas.core.indexes.numeric.Int64Index ''
+              - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+                  args:
+                  - *id001
+                  - !!python/tuple
+                    - 0
+                  - !!binary |
+                    Yg==
+                  state: !!python/tuple
+                  - 1
+                  - !!python/tuple
+                    - 3
+                  - *id002
+                  - false
+                  - !!binary |
+                    AAAAAAAAAAABAAAAAAAAAAIAAAAAAAAA
+                name: null
+            - !!python/object/apply:pandas.core.indexes.base._new_Index
+              - !!python/name:pandas.core.indexes.range.RangeIndex ''
+              - name: null
+                start: 0
+                step: 1
+                stop: 28
+          _typ: dataframe
+          attrs: {}
+        img_dir: D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_img\
+  batch_size: 10
+  collate_fn: !!python/name:torch.utils.data._utils.collate.default_collate ''
+  dataset: *id003
+  drop_last: false
+  generator: null
+  num_workers: 0
+  persistent_workers: false
+  pin_memory: true
+  pin_memory_device: ''
+  prefetch_factor: 2
+  sampler: *id004
+  timeout: 0
+  worker_init_fn: null
+unfreeze_layer:
+- '1'
+- '3'
+- '6'
+- '7'

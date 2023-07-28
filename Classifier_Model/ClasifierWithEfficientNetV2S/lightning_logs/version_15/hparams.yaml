@@ -1,0 +1,180 @@
+dropout: 0.3
+learning_rate: 0.0001
+test_dataloader: !!python/object:torch.utils.data.dataloader.DataLoader
+  _DataLoader__initialized: true
+  _DataLoader__multiprocessing_context: null
+  _IterableDataset_len_called: null
+  _dataset_kind: 0
+  _iterator: null
+  batch_sampler: !!python/object:torch.utils.data.sampler.BatchSampler
+    batch_size: 50
+    drop_last: false
+    sampler: &id004 !!python/object:torch.utils.data.sampler.SequentialSampler
+      data_source: &id003 !!python/object:dataset.PickleLatentDatasetLoader
+        dir: D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\
+        file_lists: !!python/object:pandas.core.frame.DataFrame
+          _flags:
+            allows_duplicate_labels: true
+          _metadata: []
+          _mgr: !!python/object/apply:pandas.core.internals.managers.BlockManager
+          - !!python/tuple
+            - !!python/object/apply:pandas._libs.internals._unpickle_block
+              - !!python/object/apply:numpy.core.multiarray._reconstruct
+                args:
+                - &id001 !!python/name:numpy.ndarray ''
+                - !!python/tuple
+                  - 0
+                - !!binary |
+                  Yg==
+                state: !!python/tuple
+                - 1
+                - !!python/tuple
+                  - 1
+                  - 46
+                - !!python/object/apply:numpy.dtype
+                  args:
+                  - O8
+                  - false
+                  - true
+                  state: !!python/tuple
+                  - 3
+                  - '|'
+                  - null
+                  - null
+                  - null
+                  - -1
+                  - -1
+                  - 63
+                - false
+                - - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER07\PAIR_01.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER07\PAIR_02.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER07\PAIR_03.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER07\PAIR_04.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER07\PAIR_05.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER07\PAIR_06.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER07\PAIR_07.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER04\PAIR_01.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER04\PAIR_02.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER04\PAIR_03.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER04\PAIR_04.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER04\PAIR_05.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER04\PAIR_06.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER04\PAIR_07.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER24\PAIR_01.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER24\PAIR_02.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER24\PAIR_03.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER24\PAIR_04.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER24\PAIR_05.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER24\PAIR_06.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER24\PAIR_07.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER29\PAIR_01.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER29\PAIR_02.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER29\PAIR_03.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER29\PAIR_04.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER29\PAIR_05.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER29\PAIR_06.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER29\PAIR_07.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER05\PAIR_01.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER05\PAIR_02.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER05\PAIR_03.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER05\PAIR_04.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER05\PAIR_05.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER27\PAIR_01.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER27\PAIR_02.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER27\PAIR_03.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER27\PAIR_04.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER27\PAIR_05.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER27\PAIR_06.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER27\PAIR_07.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER28\PAIR_01.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER28\PAIR_02.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER28\PAIR_03.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER28\PAIR_04.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER28\PAIR_05.pickle
+                  - D:\Nicko\TUGAS_AKHIR\Dataset_new_16\Dataset_TA_raw_pkl\4_channel\USER28\PAIR_06.pickle
+              - !!python/object/apply:builtins.slice
+                - 0
+                - 1
+                - 1
+              - 2
+            - !!python/object/apply:pandas._libs.internals._unpickle_block
+              - !!python/object/apply:numpy.core.multiarray._reconstruct
+                args:
+                - *id001
+                - !!python/tuple
+                  - 0
+                - !!binary |
+                  Yg==
+                state: !!python/tuple
+                - 1
+                - !!python/tuple
+                  - 1
+                  - 46
+                - &id002 !!python/object/apply:numpy.dtype
+                  args:
+                  - i8
+                  - false
+                  - true
+                  state: !!python/tuple
+                  - 3
+                  - <
+                  - null
+                  - null
+                  - null
+                  - -1
+                  - -1
+                  - 0
+                - false
+                - !!binary |
+                  AQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAA
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA
+                  AAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAA
+                  AAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                  AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAA
+                  AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=
+              - !!python/object/apply:builtins.slice
+                - 1
+                - 2
+                - 1
+              - 2
+          - - !!python/object/apply:pandas.core.indexes.base._new_Index
+              - !!python/name:pandas.core.indexes.numeric.Int64Index ''
+              - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+                  args:
+                  - *id001
+                  - !!python/tuple
+                    - 0
+                  - !!binary |
+                    Yg==
+                  state: !!python/tuple
+                  - 1
+                  - !!python/tuple
+                    - 2
+                  - *id002
+                  - false
+                  - !!binary |
+                    AAAAAAAAAAABAAAAAAAAAA==
+                name: null
+            - !!python/object/apply:pandas.core.indexes.base._new_Index
+              - !!python/name:pandas.core.indexes.range.RangeIndex ''
+              - name: null
+                start: 0
+                step: 1
+                stop: 46
+          _typ: dataframe
+          attrs: {}
+  batch_size: 50
+  collate_fn: !!python/name:torch.utils.data._utils.collate.default_collate ''
+  dataset: *id003
+  drop_last: false
+  generator: null
+  num_workers: 0
+  persistent_workers: false
+  pin_memory: true
+  pin_memory_device: ''
+  prefetch_factor: 2
+  sampler: *id004
+  timeout: 0
+  worker_init_fn: null
+unfreeze_layer: null

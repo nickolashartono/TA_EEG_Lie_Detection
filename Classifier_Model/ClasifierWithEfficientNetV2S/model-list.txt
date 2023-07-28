@@ -1,0 +1,11 @@
+model_builder 			-> 2 latent subtracted
+model_builder_128 		-> 2 latent concatenated
+model_builder_single		-> only user relevant latent
+model_builder_mulhead_linear	-> with attention and different data between head, 2 latent inserted into same attention network (2 head with linear layer) first and then to classifier
+model_builder_mulhead_conv	-> with attention and different data between head, 2 latent inserted into same attention network (2 head with conv layer) first and then to classifier
+model_builder_mulhead_conv_2	-> with attention and same data between head, 2 latent inserted into different attention network (2 head with conv layer) first and then compare the result of the two attention network (subtract) and then to classifier.
+model_builder_mulhead_conv_3	-> with attention and same data between head, 2 latent inserted into different attention network (4 head with conv layer) first and then compare the result of the two attention network (subtract) and then to classifier.
+model_builder_mulhead_linear_2_1d	-> 1 dimension latent, with attention and same data between head, 2 latent concated then inserted into different attention network (16 head with linear layer) first and then to classifier.
+model_builder_mulhead_conv_4	-> with attention and same data between head, 2 latent inserted into different attention network (8 head with conv layer) first and then concat them and then to classifier.
+model_builder_mulhead_conv_5	-> with attention and same data between head, 2 latent inserted into different attention network (4 head with conv layer) first and concat result of two attention network and then to classifier.
+model_builder_mulhead_conv_6	-> with attention and same data between head, 2 latent concated and then inserted into attention network (4 head with conv layer) then to classifier.
